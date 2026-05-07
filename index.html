@@ -1,0 +1,568 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АвтоПрофи — Автошкола в Бишкеке</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="site-nav navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <i class="bi bi-car-front-fill me-2"></i>Авто<span class="accent">Профи</span>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <i class="bi bi-list text-white fs-4"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Главная</a></li>
+        <li class="nav-item"><a class="nav-link" href="courses.html">Курсы</a></li>
+        <li class="nav-item"><a class="nav-link" href="schedule.html">Расписание</a></li>
+        <li class="nav-item"><a class="nav-link" href="instructors.html">Инструкторы</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.html">Записаться</a></li>
+      </ul>
+      <a href="login.html" class="nav-link btn-login">
+        <i class="bi bi-person me-1"></i>Личный кабинет
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <i class="bi bi-patch-check-fill"></i>
+            Лицензия МВД КР № 2847
+          </div>
+          <h1>Получите права<br>с <em>первого раза</em></h1>
+          <p class="hero-desc">
+            Профессиональные инструкторы, современные автомобили с двойным управлением
+            и гибкое расписание. Категории A, B, C, D.
+          </p>
+          <div class="hero-actions">
+            <a href="register.html" class="btn-hero-primary">
+              <i class="bi bi-calendar-plus"></i>
+              Записаться на курс
+            </a>
+            <a href="courses.html" class="btn-hero-outline">
+              <i class="bi bi-arrow-right"></i>
+              Смотреть курсы
+            </a>
+          </div>
+          <div class="hero-trust">
+            <div class="trust-item"><i class="bi bi-check-circle-fill"></i>Запись онлайн 24/7</div>
+            <div class="trust-item"><i class="bi bi-check-circle-fill"></i>Рассрочка 0%</div>
+            <div class="trust-item"><i class="bi bi-check-circle-fill"></i>95% сдают с 1-го раза</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-6 col-md-3">
+        <div class="stat-box">
+          <span class="val" data-count="15" data-suffix="+">15+</span>
+          <span class="lbl">Лет на рынке</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-box">
+          <span class="val" data-count="3500" data-suffix="+">3500+</span>
+          <span class="lbl">Выпускников</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-box">
+          <span class="val" data-count="12">12</span>
+          <span class="lbl">Инструкторов</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-box">
+          <span class="val" data-count="95" data-suffix="%">95%</span>
+          <span class="lbl">Сдают с 1-го раза</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- About -->
+<section class="section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5">
+        <div class="about-img-wrap">
+          <img src="https://images.unsplash.com/photo-1546614042-7df3c24c9e5d?w=800&q=80" alt="Обучение вождению">
+          <div class="about-img-badge">
+            <div>
+              <div class="big">2010</div>
+            </div>
+            <div class="small-txt">Год основания<br>автошколы</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <span class="section-label">О нас</span>
+        <h2 class="section-title">Готовим уверенных<br>водителей с 2010 года</h2>
+        <p class="text-muted mb-4">
+          Автошкола «АвтоПрофи» — лицензированное учебное заведение в Бишкеке.
+          Мы обучаем по государственной программе на автомобилях с двойным управлением.
+          Наши инструкторы прошли специальную педагогическую подготовку и работают
+          индивидуально с каждым учеником.
+        </p>
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <div class="d-flex gap-3 align-items-start">
+              <div class="adv-icon" style="flex-shrink:0">
+                <i class="bi bi-award"></i>
+              </div>
+              <div>
+                <div class="fw-bold mb-1" style="font-size:.9rem">Лицензия МВД КР</div>
+                <div class="text-muted" style="font-size:.82rem">Официально зарегистрированная автошкола с 2010 года</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex gap-3 align-items-start">
+              <div class="adv-icon" style="flex-shrink:0">
+                <i class="bi bi-car-front"></i>
+              </div>
+              <div>
+                <div class="fw-bold mb-1" style="font-size:.9rem">20 учебных автомобилей</div>
+                <div class="text-muted" style="font-size:.82rem">Все с двойным управлением, 2018–2024 г.в.</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex gap-3 align-items-start">
+              <div class="adv-icon" style="flex-shrink:0">
+                <i class="bi bi-clock"></i>
+              </div>
+              <div>
+                <div class="fw-bold mb-1" style="font-size:.9rem">Гибкое расписание</div>
+                <div class="text-muted" style="font-size:.82rem">Утро, день, вечер — выбирайте удобное время</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex gap-3 align-items-start">
+              <div class="adv-icon" style="flex-shrink:0">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <div>
+                <div class="fw-bold mb-1" style="font-size:.9rem">Гарантия результата</div>
+                <div class="text-muted" style="font-size:.82rem">Не сдали — повторные занятия бесплатно</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Courses -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="row align-items-end mb-5">
+      <div class="col-md-7">
+        <span class="section-label">Обучение</span>
+        <h2 class="section-title mb-0">Выберите категорию</h2>
+      </div>
+      <div class="col-md-5 text-md-end mt-3 mt-md-0">
+        <a href="courses.html" class="btn btn-outline-secondary">
+          Все курсы <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="course-card">
+          <div class="course-card-img">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Мотоцикл">
+            <span class="course-cat-badge">Категория A</span>
+          </div>
+          <div class="course-card-body">
+            <h4>Мотоцикл</h4>
+            <p>Управление мотоциклом, безопасная езда, техника прохождения поворотов</p>
+            <div class="course-meta">
+              <div class="course-meta-item"><i class="bi bi-book"></i> 60 ч. теории</div>
+              <div class="course-meta-item"><i class="bi bi-clock"></i> 2 месяца</div>
+            </div>
+            <div class="course-price">
+              <div class="price-num">8 000 <span>сом</span></div>
+              <a href="register.html" class="btn-enroll"><i class="bi bi-plus"></i>Записаться</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="course-card">
+          <div class="course-card-img">
+            <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=600&q=80" alt="Легковой автомобиль">
+            <span class="course-cat-badge">Категория B</span>
+            <div style="position:absolute;top:14px;right:14px;background:var(--gold);color:#fff;font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:100px;letter-spacing:.3px">Хит</div>
+          </div>
+          <div class="course-card-body">
+            <h4>Легковой автомобиль</h4>
+            <p>Самая популярная категория. Полный курс теории и практики, сдача в ГУОБДД</p>
+            <div class="course-meta">
+              <div class="course-meta-item"><i class="bi bi-book"></i> 68 ч. теории</div>
+              <div class="course-meta-item"><i class="bi bi-clock"></i> 3 месяца</div>
+            </div>
+            <div class="course-price">
+              <div class="price-num">12 000 <span>сом</span></div>
+              <a href="register.html" class="btn-enroll"><i class="bi bi-plus"></i>Записаться</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="course-card">
+          <div class="course-card-img">
+            <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&q=80" alt="Грузовой автомобиль">
+            <span class="course-cat-badge">Категория C</span>
+          </div>
+          <div class="course-card-body">
+            <h4>Грузовой автомобиль</h4>
+            <p>Обучение на современных грузовиках с гидроусилителем руля и АКПП</p>
+            <div class="course-meta">
+              <div class="course-meta-item"><i class="bi bi-book"></i> 68 ч. теории</div>
+              <div class="course-meta-item"><i class="bi bi-clock"></i> 3 месяца</div>
+            </div>
+            <div class="course-price">
+              <div class="price-num">15 000 <span>сом</span></div>
+              <a href="register.html" class="btn-enroll"><i class="bi bi-plus"></i>Записаться</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="course-card">
+          <div class="course-card-img">
+            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=80" alt="Автобус">
+            <span class="course-cat-badge">Категория D</span>
+          </div>
+          <div class="course-card-body">
+            <h4>Автобус</h4>
+            <p>Профессиональная подготовка водителей автобусов для городских маршрутов</p>
+            <div class="course-meta">
+              <div class="course-meta-item"><i class="bi bi-book"></i> 72 ч. теории</div>
+              <div class="course-meta-item"><i class="bi bi-clock"></i> 4 месяца</div>
+            </div>
+            <div class="course-price">
+              <div class="price-num">18 000 <span>сом</span></div>
+              <a href="register.html" class="btn-enroll"><i class="bi bi-plus"></i>Записаться</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Advantages -->
+<section class="section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-6">
+        <span class="section-label">Преимущества</span>
+        <h2 class="section-title">Почему учатся у нас</h2>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="adv-card">
+          <div class="adv-icon"><i class="bi bi-person-check"></i></div>
+          <h5>Опытные инструкторы</h5>
+          <p>Стаж каждого инструктора от 8 лет. Работаем индивидуально с каждым учеником независимо от уровня подготовки</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="adv-card">
+          <div class="adv-icon"><i class="bi bi-calendar3"></i></div>
+          <h5>Удобное расписание</h5>
+          <p>Занятия три раза в день: утро, день, вечер. Запись и контроль расписания через личный кабинет</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="adv-card">
+          <div class="adv-icon"><i class="bi bi-car-front"></i></div>
+          <h5>Современный автопарк</h5>
+          <p>Все учебные автомобили 2018–2024 г.в. оснащены двойным управлением и видеорегистраторами</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="adv-card">
+          <div class="adv-icon"><i class="bi bi-patch-check"></i></div>
+          <h5>Гарантия сдачи экзамена</h5>
+          <p>95% учеников сдают с первого раза. Если не сдали — дополнительные занятия за наш счёт</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="adv-card">
+          <div class="adv-icon"><i class="bi bi-credit-card"></i></div>
+          <h5>Рассрочка без переплат</h5>
+          <p>Оплата частями на 3 или 6 месяцев без процентов и скрытых комиссий. Все способы оплаты</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="adv-card">
+          <div class="adv-icon"><i class="bi bi-laptop"></i></div>
+          <h5>Личный кабинет</h5>
+          <p>Онлайн-запись на занятия, отслеживание прогресса, тесты ПДД и оплата — в одном месте</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Instructors preview -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="row align-items-end mb-5">
+      <div class="col-md-7">
+        <span class="section-label">Команда</span>
+        <h2 class="section-title mb-0">Наши инструкторы</h2>
+      </div>
+      <div class="col-md-5 text-md-end mt-3 mt-md-0">
+        <a href="instructors.html" class="btn btn-outline-secondary">
+          Все инструкторы <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="instr-card">
+          <img class="instr-photo" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Асанов А.К.">
+          <div class="instr-body">
+            <div class="instr-name">Асанов Айбек К.</div>
+            <div class="instr-role">Старший инструктор</div>
+            <div class="instr-stars">★★★★★ <span class="score">4.9</span></div>
+            <div class="instr-tags">
+              <span class="instr-tag">Кат. B</span>
+              <span class="instr-tag">Кат. C</span>
+            </div>
+            <div class="instr-exp">15 лет стажа</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="instr-card">
+          <img class="instr-photo" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80" alt="Беков Н.Т.">
+          <div class="instr-body">
+            <div class="instr-name">Беков Нурлан Т.</div>
+            <div class="instr-role">Инструктор кат. A/B</div>
+            <div class="instr-stars">★★★★★ <span class="score">4.8</span></div>
+            <div class="instr-tags">
+              <span class="instr-tag">Кат. A</span>
+              <span class="instr-tag">Кат. B</span>
+            </div>
+            <div class="instr-exp">10 лет стажа</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="instr-card">
+          <img class="instr-photo" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80" alt="Жакыпова Г.А.">
+          <div class="instr-body">
+            <div class="instr-name">Жакыпова Гульмира А.</div>
+            <div class="instr-role">Инструктор кат. B</div>
+            <div class="instr-stars">★★★★★ <span class="score">5.0</span></div>
+            <div class="instr-tags">
+              <span class="instr-tag">Кат. B</span>
+              <span class="instr-tag">Для женщин</span>
+            </div>
+            <div class="instr-exp">8 лет стажа</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="instr-card">
+          <img class="instr-photo" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" alt="Маматов С.Р.">
+          <div class="instr-body">
+            <div class="instr-name">Маматов Серик Р.</div>
+            <div class="instr-role">Инструктор кат. C</div>
+            <div class="instr-stars">★★★★<span style="color:#ddd">★</span> <span class="score">4.7</span></div>
+            <div class="instr-tags">
+              <span class="instr-tag">Кат. B</span>
+              <span class="instr-tag">Кат. C</span>
+            </div>
+            <div class="instr-exp">12 лет стажа</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-6">
+        <span class="section-label">Отзывы</span>
+        <h2 class="section-title">Что говорят наши выпускники</h2>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="testimonial">
+          <p class="testimonial-text">
+            Сдал с первого раза! Инструктор Айбек очень терпеливый,
+            объяснял каждую ошибку и не торопил. Благодаря
+            правильной подготовке на экзамене чувствовал себя уверенно.
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&q=80" alt="">
+            </div>
+            <div>
+              <div class="t-name">Алмаз Бекбоев</div>
+              <div class="t-cat">Категория B · 2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial">
+          <p class="testimonial-text">
+            Боялась садиться за руль, но Гульмира сделала так, что уже
+            на третьем занятии я почувствовала себя нормально. Очень
+            спокойный подход, никакого давления. Рекомендую всем женщинам!
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&q=80" alt="">
+            </div>
+            <div>
+              <div class="t-name">Айгерим Сатыбалдиева</div>
+              <div class="t-cat">Категория B · 2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial">
+          <p class="testimonial-text">
+            Обучался на категорию C. Хорошая площадка, грузовики в
+            нормальном состоянии. Понравилось что можно было выбирать
+            время — занимался по вечерам, работа не пострадала.
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <img src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=100&q=80" alt="">
+            </div>
+            <div>
+              <div class="t-name">Нурлан Осмонов</div>
+              <div class="t-cat">Категория C · 2023</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-section">
+  <div class="container">
+    <h2>Готовы начать обучение?</h2>
+    <p>Запишитесь сегодня — первая консультация бесплатно</p>
+    <a href="register.html" class="btn-cta">
+      <i class="bi bi-calendar-plus"></i>
+      Записаться на курс
+    </a>
+    <a href="tel:+996707380331" class="btn-cta-phone">
+      <i class="bi bi-telephone"></i>
+      +996 707 380 331
+    </a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <h5><i class="bi bi-car-front-fill me-2"></i>АвтоПрофи</h5>
+        <p style="font-size:.85rem">Лицензированная автошкола в Бишкеке. Готовим водителей категорий A, B, C, D с 2010 года. Лицензия МВД КР № 2847.</p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-telegram"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>Навигация</h5>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="courses.html">Курсы</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="instructors.html">Инструкторы</a></li>
+          <li><a href="register.html">Записаться</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>Курсы</h5>
+        <ul>
+          <li><a href="courses.html">Категория A</a></li>
+          <li><a href="courses.html">Категория B</a></li>
+          <li><a href="courses.html">Категория C</a></li>
+          <li><a href="courses.html">Категория D</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Контакты</h5>
+        <div class="footer-contact-item">
+          <i class="bi bi-geo-alt"></i>
+          <span>г. Бишкек, ул. Манаса 45</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="bi bi-telephone"></i>
+          <span>+996 707 380 331</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="bi bi-envelope"></i>
+          <span>info@avtoprofi.kg</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="bi bi-clock"></i>
+          <span>Пн–Сб: 08:00–20:00</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <span>© 2025 АвтоПрофи. Все права защищены.</span>
+      <span>Разработка сайта — курсовая работа КГТУ им. Раззакова</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+

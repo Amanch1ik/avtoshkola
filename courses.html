@@ -1,0 +1,384 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсы — АвтоПрофи</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="site-nav navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="bi bi-car-front-fill me-2"></i>Авто<span class="accent">Профи</span></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <i class="bi bi-list text-white fs-4"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+        <li class="nav-item"><a class="nav-link active" href="courses.html">Курсы</a></li>
+        <li class="nav-item"><a class="nav-link" href="schedule.html">Расписание</a></li>
+        <li class="nav-item"><a class="nav-link" href="instructors.html">Инструкторы</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.html">Записаться</a></li>
+      </ul>
+      <a href="login.html" class="nav-link btn-login"><i class="bi bi-person me-1"></i>Личный кабинет</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <nav aria-label="breadcrumb" class="mb-3">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumb-item active">Курсы обучения</li>
+      </ol>
+    </nav>
+    <h1>Курсы обучения</h1>
+    <p class="mt-2" style="color:rgba(255,255,255,.7)">Категории A, B, C и D — выберите подходящий курс</p>
+  </div>
+</div>
+
+<!-- Карточки курсов (детальные) -->
+<section class="section">
+  <div class="container">
+
+    <!-- Кат A -->
+    <div class="row g-5 align-items-center mb-5 pb-5 border-bottom">
+      <div class="col-lg-6">
+        <div style="border-radius:14px;overflow:hidden;position:relative">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Мотоцикл" style="width:100%;height:360px;object-fit:cover">
+          <div style="position:absolute;bottom:16px;left:16px;background:#fff;border-radius:8px;padding:10px 16px;box-shadow:0 4px 20px rgba(0,0,0,.15)">
+            <div style="font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.8px">Практика</div>
+            <div style="font-size:1rem;font-weight:700;color:var(--navy)">24 часа вождения</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <span class="section-label">Категория A</span>
+        <h2 class="section-title">Мотоцикл</h2>
+        <p class="text-muted mb-4">Полный курс подготовки к управлению мотоциклом. Вы освоите технику безопасной езды, маневрирование на площадке и уверенное движение в городе.</p>
+        <div class="row g-3 mb-4">
+          <div class="col-6">
+            <div style="background:var(--bg);border-radius:10px;padding:16px">
+              <div style="font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Теория</div>
+              <div style="font-size:1.3rem;font-weight:800;color:var(--navy)">60 ч.</div>
+              <div style="font-size:.8rem;color:var(--muted)">ПДД + устройство</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div style="background:var(--bg);border-radius:10px;padding:16px">
+              <div style="font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Практика</div>
+              <div style="font-size:1.3rem;font-weight:800;color:var(--navy)">24 ч.</div>
+              <div style="font-size:.8rem;color:var(--muted)">Площадка + город</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div style="background:var(--bg);border-radius:10px;padding:16px">
+              <div style="font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Срок обучения</div>
+              <div style="font-size:1.3rem;font-weight:800;color:var(--navy)">2 мес.</div>
+              <div style="font-size:.8rem;color:var(--muted)">Очное / вечернее</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div style="background:var(--bg);border-radius:10px;padding:16px">
+              <div style="font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Стоимость</div>
+              <div style="font-size:1.3rem;font-weight:800;color:var(--navy)">8 000</div>
+              <div style="font-size:.8rem;color:var(--muted)">сом / рассрочка</div>
+            </div>
+          </div>
+        </div>
+        <a href="register.html" class="btn-enroll" style="padding:13px 28px;font-size:.95rem">
+          <i class="bi bi-calendar-plus"></i>Записаться на курс
+        </a>
+      </div>
+    </div>
+
+    <!-- Кат B -->
+    <div class="row g-5 align-items-center mb-5 pb-5 border-bottom flex-row-reverse">
+      <div class="col-lg-6">
+        <div style="border-radius:14px;overflow:hidden;position:relative">
+          <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80" alt="Легковой автомобиль" style="width:100%;height:360px;object-fit:cover">
+          <div style="position:absolute;top:16px;right:16px;background:var(--gold);color:#fff;font-size:.78rem;font-weight:700;padding:5px 14px;border-radius:100px;letter-spacing:.3px">
+            Самый популярный
+          </div>
+          <div style="position:absolute;bottom:16px;left:16px;background:#fff;border-radius:8px;padding:10px 16px;box-shadow:0 4px 20px rgba(0,0,0,.15)">
+            <div style="font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.8px">Сдают с 1-го раза</div>
+            <div style="font-size:1rem;font-weight:700;color:var(--navy)">95% учеников</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <span class="section-label">Категория B</span>
+        <h2 class="section-title">Легковой автомобиль</h2>
+        <p class="text-muted mb-4">Наиболее популярный курс. Обучение на автомобилях с механической и автоматической коробкой передач. 95% наших учеников сдают экзамен ГУОБДД с первого раза.</p>
+        <div class="row g-3 mb-4">
+          <div class="col-6">
+            <div style="background:var(--bg);border-radius:10px;padding:16px">
+              <div style="font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Теория</div>
+              <div style="font-size:1.3rem;font-weight:800;color:var(--navy)">68 ч.</div>
+              <div style="font-size:.8rem;color:var(--muted)">ПДД + первая помощь</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div style="background:var(--bg);border-radius:10px;padding:16px">
+              <div style="font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Практика</div>
+              <div style="font-size:1.3rem;font-weight:800;color:var(--navy)">56 ч.</div>
+              <div style="font-size:.8rem;color:var(--muted)">Площадка + город</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div style="background:var(--bg);border-radius:10px;padding:16px">
+              <div style="font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Срок обучения</div>
+              <div style="font-size:1.3rem;font-weight:800;color:var(--navy)">3 мес.</div>
+              <div style="font-size:.8rem;color:var(--muted)">Утро / день / вечер</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div style="background:var(--bg);border-radius:10px;padding:16px">
+              <div style="font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Стоимость</div>
+              <div style="font-size:1.3rem;font-weight:800;color:var(--navy)">12 000</div>
+              <div style="font-size:.8rem;color:var(--muted)">сом / рассрочка</div>
+            </div>
+          </div>
+        </div>
+        <a href="register.html" class="btn-enroll" style="padding:13px 28px;font-size:.95rem">
+          <i class="bi bi-calendar-plus"></i>Записаться на курс
+        </a>
+      </div>
+    </div>
+
+    <!-- Кат C -->
+    <div class="row g-5 align-items-center mb-5 pb-5 border-bottom">
+      <div class="col-lg-6">
+        <div style="border-radius:14px;overflow:hidden;position:relative">
+          <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&q=80" alt="Грузовой автомобиль" style="width:100%;height:360px;object-fit:cover;object-position:center">
+          <div style="position:absolute;bottom:16px;left:16px;background:#fff;border-radius:8px;padding:10px 16px;box-shadow:0 4px 20px rgba(0,0,0,.15)">
+            <div style="font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.8px">Требование</div>
+            <div style="font-size:1rem;font-weight:700;color:var(--navy)">Нужна кат. B</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <span class="section-label">Категория C</span>
+        <h2 class="section-title">Грузовой автомобиль</h2>
+        <p class="text-muted mb-4">Профессиональная подготовка водителей грузовых автомобилей. Обучение ведётся на современных грузовиках с гидроусилителем руля. Требуется наличие удостоверения категории B.</p>
+        <div class="row g-3 mb-4">
+          <div class="col-6">
+            <div style="background:var(--bg);border-radius:10px;padding:16px">
+              <div style="font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Теория</div>
+              <div style="font-size:1.3rem;font-weight:800;color:var(--navy)">68 ч.</div>
+              <div style="font-size:.8rem;color:var(--muted)">ПДД + перевозка грузов</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div style="background:var(--bg);border-radius:10px;padding:16px">
+              <div style="font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Практика</div>
+              <div style="font-size:1.3rem;font-weight:800;color:var(--navy)">60 ч.</div>
+              <div style="font-size:.8rem;color:var(--muted)">Площадка + трассы</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div style="background:var(--bg);border-radius:10px;padding:16px">
+              <div style="font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Срок обучения</div>
+              <div style="font-size:1.3rem;font-weight:800;color:var(--navy)">3 мес.</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div style="background:var(--bg);border-radius:10px;padding:16px">
+              <div style="font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Стоимость</div>
+              <div style="font-size:1.3rem;font-weight:800;color:var(--navy)">15 000</div>
+              <div style="font-size:.8rem;color:var(--muted)">сом / рассрочка</div>
+            </div>
+          </div>
+        </div>
+        <a href="register.html" class="btn-enroll" style="padding:13px 28px;font-size:.95rem">
+          <i class="bi bi-calendar-plus"></i>Записаться на курс
+        </a>
+      </div>
+    </div>
+
+    <!-- Кат D -->
+    <div class="row g-5 align-items-center flex-row-reverse">
+      <div class="col-lg-6">
+        <div style="border-radius:14px;overflow:hidden;position:relative">
+          <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&q=80" alt="Автобус" style="width:100%;height:360px;object-fit:cover">
+          <div style="position:absolute;bottom:16px;left:16px;background:#fff;border-radius:8px;padding:10px 16px;box-shadow:0 4px 20px rgba(0,0,0,.15)">
+            <div style="font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.8px">Требование</div>
+            <div style="font-size:1rem;font-weight:700;color:var(--navy)">Нужна кат. B или C</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <span class="section-label">Категория D</span>
+        <h2 class="section-title">Автобус</h2>
+        <p class="text-muted mb-4">Подготовка к перевозке пассажиров на городских и межгородних маршрутах. Акцент на безопасность, техническое обслуживание и работу с пассажирами в нештатных ситуациях.</p>
+        <div class="row g-3 mb-4">
+          <div class="col-6">
+            <div style="background:var(--bg);border-radius:10px;padding:16px">
+              <div style="font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Теория</div>
+              <div style="font-size:1.3rem;font-weight:800;color:var(--navy)">72 ч.</div>
+              <div style="font-size:.8rem;color:var(--muted)">ПДД + перевозка пасс.</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div style="background:var(--bg);border-radius:10px;padding:16px">
+              <div style="font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Практика</div>
+              <div style="font-size:1.3rem;font-weight:800;color:var(--navy)">64 ч.</div>
+              <div style="font-size:.8rem;color:var(--muted)">Площадка + маршруты</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div style="background:var(--bg);border-radius:10px;padding:16px">
+              <div style="font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Срок обучения</div>
+              <div style="font-size:1.3rem;font-weight:800;color:var(--navy)">4 мес.</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div style="background:var(--bg);border-radius:10px;padding:16px">
+              <div style="font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Стоимость</div>
+              <div style="font-size:1.3rem;font-weight:800;color:var(--navy)">18 000</div>
+              <div style="font-size:.8rem;color:var(--muted)">сом / рассрочка</div>
+            </div>
+          </div>
+        </div>
+        <a href="register.html" class="btn-enroll" style="padding:13px 28px;font-size:.95rem">
+          <i class="bi bi-calendar-plus"></i>Записаться на курс
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Тарифы -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-label">Тарифы</span>
+      <h2 class="section-title">Выберите свой тариф</h2>
+      <p class="section-desc mx-auto">Все тарифы включают обучение по государственной программе. Рассрочка без переплат на 3 или 6 месяцев.</p>
+    </div>
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="tariff-card">
+          <div class="tariff-head">
+            <div class="cat-letter">A</div>
+            <div class="cat-name">Мотоцикл</div>
+            <div class="tariff-price">8 000 <small>сом</small></div>
+          </div>
+          <div class="tariff-body">
+            <ul class="tariff-features">
+              <li><i class="bi bi-check2"></i> 60 ч. теории</li>
+              <li><i class="bi bi-check2"></i> 24 ч. практики</li>
+              <li><i class="bi bi-check2"></i> Учебный мотоцикл</li>
+              <li><i class="bi bi-check2"></i> Срок: 2 месяца</li>
+              <li><i class="bi bi-check2"></i> Подготовка к ГУОБДД</li>
+            </ul>
+            <a href="register.html" class="btn-tariff btn-tariff-outline">Записаться</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="tariff-card featured">
+          <div class="tariff-ribbon">хит</div>
+          <div class="tariff-head">
+            <div class="cat-letter">B</div>
+            <div class="cat-name">Легковой автомобиль</div>
+            <div class="tariff-price">12 000 <small>сом</small></div>
+          </div>
+          <div class="tariff-body">
+            <ul class="tariff-features">
+              <li><i class="bi bi-check2"></i> 68 ч. теории</li>
+              <li><i class="bi bi-check2"></i> 56 ч. практики</li>
+              <li><i class="bi bi-check2"></i> Авто МКПП и АКПП</li>
+              <li><i class="bi bi-check2"></i> Срок: 3 месяца</li>
+              <li><i class="bi bi-check2"></i> Гарантия сдачи экзамена</li>
+            </ul>
+            <a href="register.html" class="btn-tariff btn-tariff-filled">Записаться</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="tariff-card">
+          <div class="tariff-head">
+            <div class="cat-letter">C</div>
+            <div class="cat-name">Грузовой автомобиль</div>
+            <div class="tariff-price">15 000 <small>сом</small></div>
+          </div>
+          <div class="tariff-body">
+            <ul class="tariff-features">
+              <li><i class="bi bi-check2"></i> 68 ч. теории</li>
+              <li><i class="bi bi-check2"></i> 60 ч. практики</li>
+              <li><i class="bi bi-check2"></i> Современные грузовики</li>
+              <li><i class="bi bi-check2"></i> Срок: 3 месяца</li>
+              <li><i class="bi bi-check2"></i> Требуется кат. B</li>
+            </ul>
+            <a href="register.html" class="btn-tariff btn-tariff-outline">Записаться</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="tariff-card">
+          <div class="tariff-head">
+            <div class="cat-letter">D</div>
+            <div class="cat-name">Автобус</div>
+            <div class="tariff-price">18 000 <small>сом</small></div>
+          </div>
+          <div class="tariff-body">
+            <ul class="tariff-features">
+              <li><i class="bi bi-check2"></i> 72 ч. теории</li>
+              <li><i class="bi bi-check2"></i> 64 ч. практики</li>
+              <li><i class="bi bi-check2"></i> Городские автобусы</li>
+              <li><i class="bi bi-check2"></i> Срок: 4 месяца</li>
+              <li><i class="bi bi-check2"></i> Требуется кат. B/C</li>
+            </ul>
+            <a href="register.html" class="btn-tariff btn-tariff-outline">Записаться</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-4 p-4 rounded-3" style="background:#fff3cd;border:1px solid #ffc107">
+      <i class="bi bi-info-circle me-2"></i>
+      <strong>Рассрочка:</strong> 50% при поступлении + 50% в середине курса. Также доступна рассрочка на 3–6 месяцев без переплат.
+    </div>
+  </div>
+</section>
+
+<div class="cta-section">
+  <div class="container">
+    <h2>Остались вопросы?</h2>
+    <p>Позвоните нам или заполните форму — ответим в течение 15 минут</p>
+    <a href="register.html" class="btn-cta"><i class="bi bi-calendar-plus"></i>Записаться</a>
+    <a href="tel:+996707380331" class="btn-cta-phone"><i class="bi bi-telephone"></i>+996 707 380 331</a>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4"><h5><i class="bi bi-car-front-fill me-2"></i>АвтоПрофи</h5><p style="font-size:.85rem">Лицензированная автошкола в Бишкеке с 2010 года.</p></div>
+      <div class="col-lg-4"><h5>Навигация</h5><ul><li><a href="index.html">Главная</a></li><li><a href="schedule.html">Расписание</a></li><li><a href="instructors.html">Инструкторы</a></li><li><a href="register.html">Записаться</a></li></ul></div>
+      <div class="col-lg-4"><h5>Контакты</h5>
+        <div class="footer-contact-item"><i class="bi bi-geo-alt"></i><span>г. Бишкек, ул. Манаса 45</span></div>
+        <div class="footer-contact-item"><i class="bi bi-telephone"></i><span>+996 707 380 331</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">© 2025 АвтоПрофи. Все права защищены.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+

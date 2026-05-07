@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход — АвтоПрофи</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="site-nav navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="bi bi-car-front-fill me-2"></i>Авто<span class="accent">Профи</span></a>
+    <div class="ms-auto">
+      <a href="index.html" class="btn btn-outline-light btn-sm">
+        <i class="bi bi-arrow-left me-1"></i>На главную
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div class="auth-wrap">
+  <div class="auth-card">
+    <div class="auth-logo-block">
+      <div class="logo-icon"><i class="bi bi-car-front-fill"></i></div>
+      <h5 class="fw-bold mb-1">АвтоПрофи</h5>
+      <p class="text-muted mb-0" style="font-size:.85rem">Личный кабинет ученика</p>
+    </div>
+
+    <ul class="nav nav-tabs mb-4" id="authTabs">
+      <li class="nav-item flex-fill text-center">
+        <a class="nav-link active" data-bs-toggle="tab" href="#loginPane">Вход</a>
+      </li>
+      <li class="nav-item flex-fill text-center">
+        <a class="nav-link" data-bs-toggle="tab" href="#regPane">Регистрация</a>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+      <!-- Вход -->
+      <div class="tab-pane fade show active" id="loginPane">
+        <form id="loginForm">
+          <div class="mb-3">
+            <label class="form-label">Телефон или Email</label>
+            <div class="input-group">
+              <span class="input-group-text bg-white"><i class="bi bi-person text-muted"></i></span>
+              <input type="text" class="form-control" placeholder="+996 700 000-000">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Пароль</label>
+            <div class="input-group">
+              <span class="input-group-text bg-white"><i class="bi bi-lock text-muted"></i></span>
+              <input type="password" class="form-control" id="pass1" placeholder="Введите пароль">
+              <button class="btn btn-outline-secondary" type="button" onclick="togglePass('pass1',this)">
+                <i class="bi bi-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="rem">
+              <label class="form-check-label" for="rem" style="font-size:.85rem">Запомнить меня</label>
+            </div>
+            <a href="#" style="font-size:.85rem;color:var(--navy)">Забыли пароль?</a>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 py-2 fw-bold mb-3">
+            <i class="bi bi-box-arrow-in-right me-2"></i>Войти
+          </button>
+          <div class="text-center text-muted mb-3" style="font-size:.8rem">или войти через</div>
+          <div class="d-flex gap-2">
+            <button type="button" class="btn btn-outline-secondary flex-fill" onclick="location.href='cabinet.html'">
+              <i class="bi bi-google me-1"></i>Google
+            </button>
+            <button type="button" class="btn btn-outline-secondary flex-fill" onclick="location.href='cabinet.html'">
+              <i class="bi bi-telegram me-1"></i>Telegram
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Регистрация -->
+      <div class="tab-pane fade" id="regPane">
+        <form id="regForm" novalidate>
+          <div class="row g-3">
+            <div class="col-6">
+              <label class="form-label">Фамилия <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" placeholder="Иванов" required>
+              <div class="invalid-feedback">Обязательно</div>
+            </div>
+            <div class="col-6">
+              <label class="form-label">Имя <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" placeholder="Иван" required>
+              <div class="invalid-feedback">Обязательно</div>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Телефон <span class="text-danger">*</span></label>
+              <div class="input-group">
+                <span class="input-group-text bg-white"><i class="bi bi-telephone text-muted"></i></span>
+                <input type="tel" class="form-control" placeholder="+996 700 000-000" required>
+                <div class="invalid-feedback">Введите номер</div>
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Email</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white"><i class="bi bi-envelope text-muted"></i></span>
+                <input type="email" class="form-control" placeholder="example@mail.com">
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Пароль <span class="text-danger">*</span></label>
+              <div class="input-group">
+                <span class="input-group-text bg-white"><i class="bi bi-lock text-muted"></i></span>
+                <input type="password" class="form-control" id="pass2" placeholder="Минимум 8 символов" minlength="8" required>
+                <button class="btn btn-outline-secondary" type="button" onclick="togglePass('pass2',this)">
+                  <i class="bi bi-eye"></i>
+                </button>
+                <div class="invalid-feedback">Минимум 8 символов</div>
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Подтвердить пароль <span class="text-danger">*</span></label>
+              <div class="input-group">
+                <span class="input-group-text bg-white"><i class="bi bi-lock-fill text-muted"></i></span>
+                <input type="password" class="form-control" id="pass3" placeholder="Повторите пароль" required>
+                <div class="invalid-feedback">Пароли не совпадают</div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="terms" required>
+                <label class="form-check-label" for="terms" style="font-size:.83rem">
+                  Соглашаюсь с <a href="#">условиями использования</a>
+                </label>
+                <div class="invalid-feedback">Необходимо согласие</div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-danger w-100 py-2 fw-bold">
+                <i class="bi bi-person-plus me-2"></i>Зарегистрироваться
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function togglePass(id, btn) {
+    const f = document.getElementById(id);
+    if (f.type === 'password') { f.type = 'text'; btn.innerHTML = '<i class="bi bi-eye-slash"></i>'; }
+    else { f.type = 'password'; btn.innerHTML = '<i class="bi bi-eye"></i>'; }
+}
+document.getElementById('loginForm').addEventListener('submit', e => {
+    e.preventDefault();
+    location.href = 'cabinet.html';
+});
+document.getElementById('regForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    if (!this.checkValidity()) { this.classList.add('was-validated'); return; }
+    if (document.getElementById('pass2').value !== document.getElementById('pass3').value) {
+        document.getElementById('pass3').setCustomValidity('mismatch');
+        this.classList.add('was-validated');
+        return;
+    }
+    location.href = 'cabinet.html';
+});
+document.getElementById('pass3').addEventListener('input', function() {
+    this.setCustomValidity('');
+});
+</script>
+</body>
+</html>
+
